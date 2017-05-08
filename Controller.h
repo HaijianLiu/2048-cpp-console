@@ -16,11 +16,11 @@ public:
 			case 'A': dirction = 'l'; break;
 			case 'S': dirction = 'd'; break;
 			case 'D': dirction = 'r'; break;
-			// case 72: dirction = 'u'; break;
-			// case 75: dirction = 'l'; break;
-			// case 80: dirction = 'd'; break;
-			// case 77: dirction = 'r'; break;
-			default : dirction = '0'; break;
+			case 72: dirction = 'u'; break;
+			case 75: dirction = 'l'; break;
+			case 80: dirction = 'd'; break;
+			case 77: dirction = 'r'; break;
+			default : dirction = '0';
 		}
 		return dirction;
 	}
