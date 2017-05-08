@@ -88,9 +88,9 @@ ipch/
 *.VC.VC.opendb
 
 # Visual Studio Project and sln files
-*.sln
-*.vcxproj
-*.vcxproj.filters
+# *.sln
+# *.vcxproj
+# *.vcxproj.filters
 
 # Visual Studio profiler
 *.psess
