@@ -5,11 +5,22 @@ public:
 	Game2048();
 	~Game2048();
 
+	// Print X of spaces
+	void PositionX(int x){
+		for (int i = 0; i < x; i++) {
+			printf(" ");
+		}
+	}
+
 	// Print MainNumber
 	// * 1. If The Number is ZERO then Print NULL(SPACE)
-	void PrintNumber(){
+	// 29 x 13
+
+	void PrintNumber(int x){
+		PositionX(x);
 		printf("+------+------+------+------+\n");
 		for (int i = 0; i < 4; i++) {
+			PositionX(x);
 			printf("|");
 			for (int j = 0; j < 4; j++) {
 				if(mainNumber[i][j] == 0){
@@ -20,7 +31,9 @@ public:
 				printf("|");
 			}
 			printf("\n");
+			PositionX(x);
 			printf("|      |      |      |      |\n");
+			PositionX(x);
 			printf("+------+------+------+------+\n");
 		}
 
@@ -212,5 +225,4 @@ private:
 	double bigNumber; // A BIGGEST Number Variable For Add Number
 	bool ifAdd; // If A BIGGEST Number is Added
 	bool gameOver; // A bool for CheckGameOver()
-
 };
